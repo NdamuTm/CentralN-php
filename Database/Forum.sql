@@ -1,4 +1,5 @@
 -- Create the database
+DROP DATABASE IF EXISTS centralN;
 CREATE DATABASE centralN;
 USE centralN;
 
@@ -93,7 +94,7 @@ CREATE TABLE UserStatus (
     user_id INT NOT NULL,
     status VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES Users(id)
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
 );
 -- Create friends table
 CREATE TABLE Friends (
@@ -107,32 +108,7 @@ CREATE TABLE Friends (
 
 -- Insert sample data into the Tables
 
--- Insert friendships into the Friends table with 'accepted' status
-INSERT INTO Friends (user_id, friend_id, status) VALUES
-    (1, 2, 'accepted'), -- Thabo and Naledi are friends
-    (1, 3, 'accepted'), -- Thabo and Lerato are friends
-    (2, 3, 'accepted'), -- Naledi and Lerato are friends
-    (2, 4, 'accepted'), -- Naledi and Sibusiso are friends
-    (3, 5, 'accepted'), -- Lerato and Ayanda are friends
-    (3, 6, 'accepted'), -- Lerato and Zanele are friends
-    (4, 7, 'accepted'), -- Sibusiso and Kabelo are friends
-    (4, 8, 'accepted'), -- Sibusiso and Mpho are friends
-    (5, 9, 'accepted'), -- Ayanda and Khaya are friends
-    (5, 10, 'accepted'), -- Ayanda and Dineo are friends
-    (6, 11, 'accepted'), -- Zanele and Sipho are friends
-    (6, 12, 'accepted'), -- Zanele and Nosipho are friends
-    (7, 13, 'accepted'), -- Kabelo and Jabulani are friends
-    (7, 14, 'accepted'), -- Kabelo and Phindile are friends
-    (8, 15, 'accepted'), -- Mpho and Thandiwe are friends
-    (8, 16, 'accepted'), -- Mpho and Palesa are friends
-    (9, 17, 'accepted'), -- Khaya and Lindiwe are friends
-    (9, 18, 'accepted'), -- Khaya and Vusi are friends
-    (10, 19, 'accepted'), -- Dineo and Bongani are friends
-    (10, 20, 'accepted'), -- Dineo and Tshepo are friends
-    (11, 21, 'accepted'), -- Sipho and Nandi are friends
-    (11, 22, 'accepted'), -- Sipho and Zodwa are friends
-    (12, 23, 'accepted'), -- Nosipho and Thembi are friends
-    (12, 1, 'accepted'); -- Nosipho and Thabo are friends
+
 
 
 -- Insert Users

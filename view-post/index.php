@@ -187,7 +187,7 @@ if (isset($post['date'])) {
                     echo "Error fetching comments: " . $e->getMessage();
                 }
                 ?>
-                <form action="/assets/Utils/posting.php.php" method="post" class="add-comment">
+                <form action="/assets/Utils/posting.php" method="post" class="add-comment">
                     <input type="hidden" name="action" value="addComment">
                     <input class="comment-input" type="text" placeholder="Type your reply here..." name="comment">
                     <input type="hidden" name="parent_comment_id" value="">

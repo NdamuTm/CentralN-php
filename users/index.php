@@ -11,6 +11,12 @@ require_once '../assets/Utils/UserUtils.php';
 require_once '../assets/Utils/Utils.php';
 
 session_start();
+
+if (!isset($_SESSION['userId'])) {
+  // Redirect or show an error if the user is not logged in
+  header("Location: /Login");
+  exit();
+}
 $loggedInUserId = $_SESSION['userId'];
 $users = getAllUsers();
 
@@ -67,7 +73,7 @@ $users = getAllUsers();
 </header>
 
 <main class="main-content" style="justify-content: center; align-items: center; flex-direction: column;">
-  <h1 style="margin-block: 2rem;">My Friends</h1>
+  <h1 style="margin-block: 2rem;">All users</h1>
   <div class="main-container" style="align-items: center;">
     <div class="create-post container">
       <?php
