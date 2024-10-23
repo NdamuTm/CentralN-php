@@ -1,0 +1,87 @@
+.post-content .post-img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.post-body {
+    padding-top: 1rem;
+    line-height: 1.6;
+}
+
+.related-posts h2, .post-meta-details h2 {
+    font-size: 22px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.related-post {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #2C353D;
+}
+
+.related-post h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.related-post p {
+    color: #97989D;
+    font-size: 14px;
+}
+
+.comments h2 {
+    font-size: 22px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.comment-thread {
+    padding-top: 1rem;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.comment .user-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.comment-details {
+    margin-left: 1rem;
+    background: #262D34;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.comment-details h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.comment-details p {
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.comment-details .reply {
+    font-size: 14px;
+    color: #FF6934;
+    cursor: pointer;
+}
+
+.replies {
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+.reply-comment .comment-details {
+    background: #1E252B;
+}

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Vodafone';
+    src: url('Vodafone.eot');
+    src: local('Vodafone'),
+        url('Vodafone.eot?#iefix') format('embedded-opentype'),
+        url('Vodafone.woff2') format('woff2'),
+        url('Vodafone.woff') format('woff'),
+        url('Vodafone.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vodafone';
+    src: url('Vodafone-Bold.eot');
+    src: local('Vodafone-Bold'),
+        url('Vodafone-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Vodafone-Bold.woff2') format('woff2'),
+        url('Vodafone-Bold.woff') format('woff'),
+        url('Vodafone-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vodafone';
+    src: url('Vodafone-Light.eot');
+    src: local('Vodafone-Light'),
+        url('Vodafone-Light.eot?#iefix') format('embedded-opentype'),
+        url('Vodafone-Light.woff2') format('woff2'),
+        url('Vodafone-Light.woff') format('woff'),
+        url('Vodafone-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vodafone';
+    src: url('Vodafone-ExtraBold.eot');
+    src: local('Vodafone-ExtraBold'),
+        url('Vodafone-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Vodafone-ExtraBold.woff2') format('woff2'),
+        url('Vodafone-ExtraBold.woff') format('woff'),
+        url('Vodafone-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
